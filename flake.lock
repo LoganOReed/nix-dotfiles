@@ -16,6 +16,22 @@
         "type": "github"
       }
     },
+    "dracula-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1708834650,
+        "narHash": "sha256-I3rtbJYv1D+kniOLL9hmTF3ucp/qSNewnO2GmYAERko=",
+        "owner": "Mofiqul",
+        "repo": "dracula.nvim",
+        "rev": "8d8bddb8814c3e7e62d80dda65a9876f97eb699c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mofiqul",
+        "repo": "dracula.nvim",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -93,17 +109,18 @@
     },
     "kickstart-nix-nvim": {
       "inputs": {
+        "dracula-nvim": "dracula-nvim",
         "flake-utils": "flake-utils",
         "gen-luarc": "gen-luarc",
         "nixpkgs": "nixpkgs_2",
         "wf-nvim": "wf-nvim"
       },
       "locked": {
-        "lastModified": 1714631041,
-        "narHash": "sha256-CixeqVTbBKVzZqITlCqGdRLGjl27wOKASxCBS3G5vlg=",
+        "lastModified": 1714638425,
+        "narHash": "sha256-aNwOKDhKRWOr4HZxtfkS2QeZhPjXcS3MQFvVKmk4MrA=",
         "owner": "LoganOReed",
         "repo": "kickstart-nix.nvim",
-        "rev": "fdd715e6a3622b08bc7f43adbf1688026b2ae518",
+        "rev": "9e3d90c512ef29f80a9acadc182600a90e05d90b",
         "type": "github"
       },
       "original": {
@@ -215,11 +232,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1714568100,
-        "narHash": "sha256-qdCdeo2ZBIPEi3jQRd9ed/hO4gZTx+2h2N6WqiYBl4s=",
+        "lastModified": 1714638421,
+        "narHash": "sha256-uwkuCuTHg21t/PyK/gyDdnpSAbGpvfIDiqgBnyj6vXI=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "67ff7c2201dba1268c376a7fab36b330a5e664ab",
+        "rev": "123db1d42e36eff48d2f5103c43eafd09a01d1cf",
         "type": "github"
       },
       "original": {
