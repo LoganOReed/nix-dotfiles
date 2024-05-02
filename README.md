@@ -1,19 +1,8 @@
 # ❄️ NixOS dotfiles
 
-*My configuration files for NixOS. Feel free to look around and copy!* 
+*My configuration files for NixOS. Mostly stolen from [notusknot](https://github.com/notusknot/dotfiles-nix) and uses [kickstart-nix.nvim]() for nvim setup!* 
 
-# Special thanks to:
-- [Sioodmy's dotfiles](https://github.com/sioodmy/dotfiles)
-- [Syndrizzle's dotfiles](https://github.com/syndrizzle/hotfiles)
-- [Javacafe01's dotfiles](https://github.com/javacafe01/dotfiles)
-- [Siduck76's NvChad](https://github.com/siduck76/nvchad/)
-- [NixOS Manual](https://nixos.org/manual/nixos/stable/)
-- [Epsyle's NixOS Dotfiles](https://github.com/epsyle/snowflake/)
-
-![Screenshot of my desktop](https://github.com/notusknot/dotfiles-nix/blob/main/pics/screenshot.png)
-<video src="https://github.com/notusknot/dotfiles-nix/blob/main/pics/recording.mp4" width="100%"></video>
-
-## Info
+## TODO UPDATE FOR ME Info
 - RAM usage on startup: ~180mb
 - Package count: :package: 582
 - Uses the [jabuti](https://github.com/jabuti-theme) theme
@@ -31,13 +20,10 @@ rebuild
 ``` 
 OR
 ```
-doas nixos-rebuild switch --flake .#yourComputer --fast
+sudo nixos-rebuild switch --flake .#yourComputer --fast
 ```
 
-- Connect to wifi (replace stuff within brackets with your info)
-```
-iwctl --passphrase [passphrase] station [device] connect [SSID]
-```
+- Connect to wifi using network manager nmcli 
 
 ## Installation
 
@@ -107,8 +93,3 @@ Lastly, build the configuration with
 ```bash
 sudo nixos-rebuild switch --flake .#yourComputer
 ```
-
-And that should be it! If there are any issues please don't hesistate to [submit an issue](https://github.com/notusknot/dotfiles-nix/issues) or contact me.
-
-## Conclusion
-And thats about it for my configuration. The code is registered under the MIT license, meaning you are allowed to use or distribute the code as you please, and if you need any help or have any suggestions, you can reach me on Discord at `notusknot#5622` or email me at `notusknot@pm.me`.

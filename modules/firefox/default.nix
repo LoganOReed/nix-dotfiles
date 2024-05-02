@@ -14,13 +14,11 @@ in {
             profiles.occam = {
                 # Install extensions from NUR
                 extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-                    decentraleyes
                     ublock-origin
                     clearurls
-                    sponsorblock
                     darkreader
-                    h264ify
-                    df-youtube
+                    bitwarden
+                    dracula-dark-colorscheme
                 ];
 
                 settings = {
@@ -34,7 +32,7 @@ in {
                     "beacon.enabled" = false;
                     "browser.safebrowsing.downloads.remote.enabled" = false;
                     "network.IDN_show_punycode" = true;
-                    "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+                    #"extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
                     "app.shield.optoutstudies.enabled" = false;
                     "dom.security.https_only_mode_ever_enabled" = true;
                     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
@@ -80,7 +78,6 @@ in {
                     "browser.urlbar.suggest.topsites" = false;
                     "browser.uidensity" = 1;
                     "media.autoplay.enabled" = false;
-                    "toolkit.zoomManager.zoomValues" = ".8,.90,.95,1,1.1,1.2";
                     
                     "privacy.firstparty.isolate" = true;
                     "network.http.sendRefererHeader" = 0;
