@@ -25,7 +25,7 @@
              inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        kickstart-nix-nvim.url = "github.com:LoganOReed/kickstart-nix.nvim";
+        kickstart-nix-nvim.url = "github:LoganOReed/kickstart-nix.nvim/main";
     };
 
     # All outputs for the system (configs)
@@ -59,7 +59,7 @@
                             nixpkgs.overlays = [
                                 # Add nur overlay for Firefox addons
                                 nur.overlay
-                                kickstart-nix-nvim.overlays.default
+                                inputs.kickstart-nix-nvim.overlays.default
                                 (import ./overlays)
                             ];
                         }
