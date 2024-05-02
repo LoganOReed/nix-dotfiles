@@ -4,8 +4,11 @@
     # Remove unecessary preinstalled packages
     environment.defaultPackages = [ ];
     services.xserver.desktopManager.xterm.enable = false;
-
     programs.zsh.enable = true;
+
+
+    # allows packages which aren't totally foss
+    nixpkgs.config.allowUnfree = true;
 
     # Laptop-specific packages (the other ones are installed in `packages.nix`)
     environment.systemPackages = with pkgs; [
