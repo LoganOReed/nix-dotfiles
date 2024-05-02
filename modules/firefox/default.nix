@@ -16,7 +16,6 @@ in {
                 extensions = with pkgs.nur.repos.rycee.firefox-addons; [
                     ublock-origin
                     clearurls
-                    darkreader
                     bitwarden
                     dracula-dark-colorscheme
                 ];
