@@ -9,7 +9,6 @@ in {
 	home.packages = with pkgs; [
 	    tofi swaybg wlsunset wl-clipboard hyprland swaylock
 	];
-
         home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
     };
 }
