@@ -21,7 +21,7 @@
         eww.enable = true;
         dunst.enable = true;
         hyprland.enable = true;
-        wofi.enable = true;
+        tofi.enable = true;
 
         # cli
         nvim.enable = true;

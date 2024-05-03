@@ -15,7 +15,8 @@
         ./eww
         ./dunst
         ./hyprland
-        ./wofi
+        ./tofi
+
 
         # cli
         ./nvim

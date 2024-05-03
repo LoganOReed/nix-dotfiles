@@ -1,8 +1,3 @@
-
-
-
-
-
 {
     description = "NixOS configuration";
 
