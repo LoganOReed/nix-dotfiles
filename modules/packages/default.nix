@@ -7,6 +7,8 @@ let cfg =
     bandw = pkgs.writeShellScriptBin "bandw" ''${builtins.readFile ./bandw}'';
     maintenance = pkgs.writeShellScriptBin "maintenance" ''${builtins.readFile ./maintenance}'';
 
+
+
 in {
     options.modules.packages = { enable = mkEnableOption "packages"; };
     config = mkIf cfg.enable {
@@ -22,6 +24,7 @@ in {
             screen bandw maintenance
             wf-recorder anki-bin 
             vim
+            
         ];
     };
 }

@@ -15,6 +15,7 @@
         ./eww
         ./dunst
         ./hyprland
+        ./gbar
         ./tofi
 
 
@@ -31,6 +32,7 @@
 
         # from external flakes
         inputs.nix-colors.homeManagerModules.default
+        inputs.gBar.homeManagerModules.x86_64-linux.default
     ];
 
     colorScheme = inputs.nix-colors.colorSchemes.dracula;

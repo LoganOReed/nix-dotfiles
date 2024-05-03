@@ -21,6 +21,7 @@
         };
 
         kickstart-nix-nvim.url = "github:LoganOReed/kickstart-nix.nvim/main";
+        gBar.url = "github:scorpion-26/gBar";
     };
 
     # All outputs for the system (configs)

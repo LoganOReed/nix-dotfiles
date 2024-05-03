@@ -10,8 +10,6 @@
     imports = [ ../../modules/default.nix ];
 
 
-    # colorscheme
-    #colorScheme = inputs.nix-colors.colorSchemes.dracula;
 
     config.modules = {
         # gui
@@ -21,6 +19,7 @@
         eww.enable = true;
         dunst.enable = true;
         hyprland.enable = true;
+        gbar.enable = true;
         tofi.enable = true;
 
         # cli
