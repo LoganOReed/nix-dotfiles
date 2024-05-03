@@ -53,7 +53,7 @@ in
 
     # Install fonts
     fonts = {
-        fonts = with pkgs; [
+        packages = with pkgs; [
             iosevka-comfy.comfy
             noto-fonts
             font-awesome
@@ -61,13 +61,6 @@ in
             openmoji-color
             (nerdfonts.override { fonts = [ "Iosevka" ]; })
         ];
-
-        fontconfig = {
-            hinting.autohint = true;
-            defaultFonts = {
-              emoji = [ "OpenMoji Color" ];
-            };
-        };
     };
 
 
@@ -102,7 +95,6 @@ in
 
     # Boot settings: clean /tmp/, latest kernel and enable bootloader
     boot = {
-        cleanTmpDir = true;
         loader = {
         systemd-boot.enable = true;
         systemd-boot.configurationLimit = 15;
@@ -124,11 +116,6 @@ in
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
-    console = {
-        font = "Lat2-Terminus16";
-        keyMap = "us";
-    };
-
 
 
     # Set up user and enable sudo
