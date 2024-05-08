@@ -8,14 +8,14 @@ in {
     config = mkIf cfg.enable {
         xdg.userDirs = {
             enable = true;
-            documents = "$HOME/stuff/other/";
-            download = "$HOME/stuff/other/";
-            videos = "$HOME/stuff/other/";
-            music = "$HOME/stuff/music/";
-            pictures = "$HOME/stuff/pictures/";
-            desktop = "$HOME/stuff/other/";
-            publicShare = "$HOME/stuff/other/";
-            templates = "$HOME/stuff/other/";
+            documents = "$HOME/documents/";
+            download = "$HOME/downloads/";
+            videos = "$HOME/documents/videos/";
+            music = "$HOME/documents/music/";
+            pictures = "$HOME/documents/pictures/";
+            desktop = "$HOME/misc/xdg/";
+            publicShare = "$HOME/misc/xdg/";
+            templates = "$HOME/misc/xdg/";
         };
     };
 }

@@ -217,18 +217,18 @@ window#waybar.solo {
 }
 
 #clock {
-    background-color: #ff5555;
+    background-color: #${base0B};
     color: #282a36;
 }
 
 #battery {
-    background-color: #44475a;
-    color: #f8f8f2;
+    background-color: #${base0C};
+    color: #282a36;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #282a36;
+    background-color: #${base0C};
 }
 
 @keyframes blink {
@@ -253,12 +253,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #f1fa8c;
+    background-color: #${base0B};
     color: #282a36;
 }
 
 #memory {
-    background-color: #f1fa8c;
+    background-color: #${base0B};
     color: #282a36;
 }
 
@@ -267,12 +267,12 @@ label:focus {
 }
 
 #network {
-    background-color: #50fa7b;
+    background-color: #${base0A};
     color: #282a36;
 }
 
 #network.disconnected {
-    background-color: #50fa7b;
+    background-color: #ffa000;
     color: #282a36;
 }
 
@@ -369,7 +369,7 @@ label:focus {
 }
 
 #custom-weather {
-    background-color: #8be9fd;
+    background-color: #${base0C};
     color: #282a36;
     margin-right: 5;
 }
@@ -380,7 +380,7 @@ label:focus {
 }
 
 #sway-scratchpad {
-    background-color: #50fa7b;
+    background-color: #${base0A};
     color: #282a36;
 }
           '';
@@ -388,21 +388,21 @@ label:focus {
     };
 }
 
-# scheme: "Darcula"
-# author: "jetbrains"
-# base00: "2b2b2b" # background
-# base01: "323232" # line cursor
-# base02: "323232" # statusline
-# base03: "606366" # line numbers
-# base04: "a4a3a3" # selected line number
-# base05: "a9b7c6" # foreground
-# base06: "ffc66d" # function bright yellow
-# base07: "ffffff"
-# base08: "4eade5" # cyan
-# base09: "689757" # blue
-# base0A: "bbb529" # yellow
-# base0B: "6a8759" # string green
-# base0C: "629755" # comment green
-# base0D: "9876aa" # purple
-# base0E: "cc7832" # orange
-# base0F: "808080" # gray
+# scheme: "Dracula"
+# author: "Mike Barkmin (http://github.com/mikebarkmin) based on Dracula Theme (http://github.com/dracula)"
+# base00: "#282936" #background
+# base01: "#3a3c4e"
+# base02: "#4d4f68"
+# base03: "#626483"
+# base04: "#62d6e8"
+# base05: "#e9e9f4" #foreground
+# base06: "#f1f2f8"
+# base07: "#f7f7fb"
+# base08: "#ea51b2"
+# base09: "#b45bcf"
+# base0A: "#00f769"
+# base0B: "#ebff87"
+# base0C: "#a1efe4"
+# base0D: "#62d6e8"
+# base0E: "#b45bcf"
+# base0F: "#00f769"

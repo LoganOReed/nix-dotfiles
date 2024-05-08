@@ -18,6 +18,7 @@ in {
     enable = true;
     package = pkgs.swayfx;
     wrapperFeatures.gtk = true;
+    config.bars = [];
     extraConfig = ''
 bar swaybar_command waybar
 exec_always swaybg -i $NIXOS_CONFIG_DIR/pics/RainbowDracula.png
