@@ -153,11 +153,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1714657989,
-        "narHash": "sha256-ZpN/XX/w6QHnBve/CHJLezd+XL4ubtQyEPyytgKVlu4=",
+        "lastModified": 1715144571,
+        "narHash": "sha256-5Hk/HZURYqYMdPpYFQtXRgoNbCXpzxbJdm1+1xo7Deg=",
         "owner": "LoganOReed",
         "repo": "kickstart-nix.nvim",
-        "rev": "0adcd0cccb1b5d4750d74187c2a41c00403f548d",
+        "rev": "2df8ead866d7107bbd605ae4be586245487d28b0",
         "type": "github"
       },
       "original": {
@@ -253,11 +253,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1714253743,
-        "narHash": "sha256-mdTQw2XlariysyScCv2tTE45QSU9v/ezLcHJ22f0Nxc=",
+        "lastModified": 1714906307,
+        "narHash": "sha256-UlRZtrCnhPFSJlDQE7M0eyhgvuuHBTe1eJ9N9AQlJQ0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "58a1abdbae3217ca6b702f03d3b35125d88a2994",
+        "rev": "25865a40d14b3f9cf19f19b924e2ab4069b09588",
         "type": "github"
       },
       "original": {
