@@ -18,6 +18,7 @@
         ./sway
         ./i3
         ./gbar
+        ./waybar
         ./tofi
 
 
