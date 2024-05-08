@@ -19,6 +19,8 @@
         eww.enable = true;
         dunst.enable = true;
         hyprland.enable = true;
+        sway.enable = true;
+        i3.enable = true;
         gbar.enable = true;
         tofi.enable = true;
 

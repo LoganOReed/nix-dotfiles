@@ -15,6 +15,8 @@
         ./eww
         ./dunst
         ./hyprland
+        ./sway
+        ./i3
         ./gbar
         ./tofi
 
