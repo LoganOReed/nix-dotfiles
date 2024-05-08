@@ -72,6 +72,25 @@ in
     # };
     # };
 
+  services.greetd = {
+    enable = true;
+    settings = {
+     default_session = {
+       user = "occam";
+       command = ''
+      ${pkgs.greetd.tuigreet}/bin/tuigreet \
+        --time \
+        --asterisks \
+        --user-menu \
+        --cmd sway
+    '';};
+    };
+  };
+
+  environment.etc."greetd/environments".text = ''
+    sway
+  '';
+
     programs.zsh.enable = true;
 
 
