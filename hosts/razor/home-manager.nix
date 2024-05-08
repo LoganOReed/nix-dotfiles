@@ -21,7 +21,7 @@
         hyprland.enable = true;
         sway.enable = true;
         i3.enable = true;
-        gbar.enable = true;
+        # gbar.enable = true;
         waybar.enable = true;
         tofi.enable = true;
 

@@ -19,6 +19,7 @@ in {
     package = pkgs.swayfx;
     wrapperFeatures.gtk = true;
     extraConfig = ''
+bar swaybar_command waybar
 exec_always swaybg -i $NIXOS_CONFIG_DIR/pics/RainbowDracula.png
 exec_always --no-startup-id autotiling
 #exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
