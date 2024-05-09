@@ -14,16 +14,16 @@
     config.modules = {
         # gui
         firefox.enable = true;
-        foot.enable = true;
+        # foot.enable = true;
         kitty.enable = true;
-        eww.enable = true;
+        # eww.enable = true;
         dunst.enable = true;
         hyprland.enable = true;
         sway.enable = true;
-        i3.enable = true;
-        # gbar.enable = true;
+        # i3.enable = true;
+        gbar.enable = true;
         waybar.enable = true;
-        tofi.enable = true;
+        # tofi.enable = true;
 
         # cli
         nvim.enable = true;
@@ -35,5 +35,7 @@
         # system
         xdg.enable = true;
         packages.enable = true;
+        scripts.enable = true;
     };
+
 }

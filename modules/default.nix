@@ -31,12 +31,16 @@
 
         # system
         ./xdg
+        ./scripts
         ./packages
 
         # from external flakes
         inputs.nix-colors.homeManagerModules.default
         inputs.gBar.homeManagerModules.x86_64-linux.default
     ];
+
+    # Nicely reload system units when changing configs
+    systemd.user.startServices = "sd-switch";
 
     colorScheme = inputs.nix-colors.colorSchemes.dracula;
 }

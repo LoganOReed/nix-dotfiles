@@ -40,8 +40,10 @@ in
     # Remove unecessary preinstalled packages
     environment.defaultPackages = [ ];
 
+    services.xserver.desktopManager.xterm.enable = false;
+
     # For i3
-    environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
+    # environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
 
     # services.xserver = {
     #   enable = true;
@@ -99,7 +101,7 @@ in
 
     # Laptop-specific packages (the other ones are installed in `packages.nix`)
     environment.systemPackages = with pkgs; [
-        acpi tlp git light dbus-sway-environment configure-gtk
+        acpi tlp git dbus-sway-environment configure-gtk
     ];
 
     # Install fonts
@@ -177,7 +179,7 @@ in
             #public key for laptop
             "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK6sLwHf6YinWCrt0amlNhrWml3i+Vq7Ju1GcnAWd1zL occam@razor"
         ];
-        extraGroups = [ "input" "wheel" "networkmanager" ];
+        extraGroups = [ "audio" "video" "input" "wheel" "networkmanager" ];
         shell = pkgs.zsh;
     };
 
@@ -267,6 +269,10 @@ in
             driSupport = true;
         };
     };
+
+    programs.light.enable = true;
+
+
 
     # Do not touch
     system.stateVersion = "23.11";
