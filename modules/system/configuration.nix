@@ -40,6 +40,21 @@ in
     # Remove unecessary preinstalled packages
     environment.defaultPackages = [ ];
 
+
+  # nix-helper
+  # nh os switch
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 7d --keep 10";
+    flake = "/home/occam/dotfiles";
+  };
+
+
+
+
+
+
     services.xserver.desktopManager.xterm.enable = false;
 
     # For i3
@@ -134,11 +149,12 @@ in
     nix = {
         settings.auto-optimise-store = true;
         settings.allowed-users = [ "occam" ];
-        gc = {
-            automatic = true;
-            dates = "weekly";
-            options = "--delete-older-than 7d";
-        };
+        # nh does this now
+        # gc = {
+        #     automatic = true;
+        #     dates = "weekly";
+        #     options = "--delete-older-than 7d";
+        # };
         extraOptions = ''
             experimental-features = nix-command flakes
             keep-outputs = true
@@ -258,7 +274,7 @@ in
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
 
   };
 
@@ -270,12 +286,11 @@ in
         opengl = {
             enable = true;
             driSupport = true;
+            driSupport32Bit = true;
         };
     };
 
     programs.light.enable = true;
-
-
 
     # Do not touch
     system.stateVersion = "23.11";

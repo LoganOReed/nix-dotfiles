@@ -8,7 +8,7 @@ in {
     options.modules.sway= { enable = mkEnableOption "sway"; };
     config = mkIf cfg.enable {
 	home.packages = with pkgs; [
-	 dunst tofi swaybg wlsunset pavucontrol swaylock-effects swayidle kitti3 autotiling wayland
+	 dunst rofi-wayland swaybg wlsunset pavucontrol swaylock-effects swayidle kitti3 autotiling wayland xwayland
 	];
 
 
@@ -16,8 +16,10 @@ in {
   # enable sway window manager
   wayland.windowManager.sway = {
     enable = true;
+    checkConfig = false;
     package = pkgs.swayfx;
     wrapperFeatures.gtk = true;
+    xwayland = true;
     config.bars = [];
     extraConfig = ''
 bar swaybar_command waybar
