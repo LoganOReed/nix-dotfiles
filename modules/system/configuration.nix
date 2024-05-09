@@ -219,14 +219,17 @@ in
 
     # Set environment variables
     environment.variables = {
-        NIXOS_CONFIG = "$HOME/.config/nixos/configuration.nix";
-        NIXOS_CONFIG_DIR = "$HOME/.config/nixos/";
+        NIXOS_CONFIG = "$HOME/dotfiles/configuration.nix";
+        NIXOS_CONFIG_DIR = "$HOME/dotfiles";
         XDG_STATE_HOME = "$HOME/.local/state";
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/share";
         XDG_CACHE_HOME = "$HOME/.cache";
         GTK_RC_FILES = "$HOME/.local/share/gtk-1.0/gtkrc";
         GTK2_RC_FILES = "$HOME/.local/share/gtk-2.0/gtkrc";
+        MOZ_ENABLE_WAYLAND = "1";
+        DISABLE_QT5_COMPAT = "0";
+        DIRENV_LOG_FORMAT = "";
         EDITOR = "nvim";
     };
 
