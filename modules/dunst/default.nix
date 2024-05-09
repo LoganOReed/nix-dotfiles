@@ -10,11 +10,11 @@ in {
 	    dunst
 	];
 
-        services.dunst = {
+        services.dunst = with config.colorscheme.palette;{
             enable = true;
             settings = {
                 global = {
-                    origin = "top-left";
+                    origin = "top-right";
                     offset = "60x12";
                     separator_height = 2;
                     padding = 12;
@@ -31,9 +31,9 @@ in {
                     startup_notification = "false";
                     corner_radius = 12;
 
-                    frame_color = "#44465c";
-                    background = "#303241";
-                    foreground = "#d9e0ee";
+                    frame_color = "#${base0A}";
+                    background = "#${base00}";
+                    foreground = "#${base05}";
                     timeout = 2;
                 };
             };

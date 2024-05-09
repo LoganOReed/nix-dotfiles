@@ -20,10 +20,12 @@
         ./gbar
         ./waybar
         ./tofi
+        ./zathura
 
 
         # cli
         ./nvim
+        ./watson
         ./zsh
         ./git
         ./gpg

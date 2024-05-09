@@ -9,13 +9,13 @@ in {
         xdg.userDirs = {
             enable = true;
             documents = "$HOME/documents/";
-            download = "$HOME/downloads/";
-            videos = "$HOME/documents/videos/";
-            music = "$HOME/documents/music/";
             pictures = "$HOME/documents/pictures/";
-            desktop = "$HOME/misc/xdg/";
-            publicShare = "$HOME/misc/xdg/";
-            templates = "$HOME/misc/xdg/";
+            music = "$HOME/documents/music/";
+            videos = "$HOME/documents/videos/";
+            download = "$HOME/downloads/";
+            desktop = "$HOME/misc/";
+            publicShare = "$HOME/misc/";
+            templates = "$HOME/misc/";
         };
     };
 }

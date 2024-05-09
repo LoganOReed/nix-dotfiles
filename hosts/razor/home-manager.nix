@@ -24,9 +24,11 @@
         gbar.enable = true;
         waybar.enable = true;
         # tofi.enable = true;
+        zathura.enable = true;
 
         # cli
         nvim.enable = true;
+        watson.enable = true;
         zsh.enable = true;
         git.enable = true;
         gpg.enable = true;

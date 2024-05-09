@@ -174,8 +174,6 @@ bindsym $mod+l			            focus right
 bindsym $mod+Shift+l		        move right 30
 bindsym $mod+Ctrl+l		          move workspace to output right
 
-# bindsym $mod+semicolon 			    exec --no-startup-id skippy-xd
-
 # z
 # not where my dotfiles are anymore
 # bindsym $mod+z			            exec --no-startup-id $term -e nvim ~/.dotfiles
@@ -325,6 +323,7 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_S
 # Brightness
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
+
 
 
 
