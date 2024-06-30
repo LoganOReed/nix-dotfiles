@@ -126,7 +126,7 @@ window#waybar {
     background: @theme_base_color;
     background-color: rgba(43, 48, 59, 0.9);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: @theme_text_color;
+    color: #${base06};
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0;
